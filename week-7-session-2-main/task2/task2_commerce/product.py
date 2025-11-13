@@ -11,6 +11,12 @@ class Product:
     def __str__(self):
         return f"{self.name} - £{self.price}"
 
+    def __repr__(self):
+        return f"Product(name = {self.name}, price = {self.price})"
+    
+    def test_price(self):
+        None
+
 # define the __repr__ method
 
 # write code to test the set_price method with assert
