@@ -7,8 +7,10 @@ class Book:
 
     def __str__(self):
         return f"{self.title} by {self.author} ({self.year}) - {self.edition} edition"
-
-
+    def setYear(self,year):
+        self.year = year
+    def __repr__(self):
+        return f"Book(title = {self.title}, author = {self.author}, year = {self.year}, edition = {self.edition})"
 # write setter for year and update the __init__ method
 
 
