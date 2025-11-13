@@ -5,6 +5,10 @@ class Movie:
         self.year = year
         self.genre = genre
         self.duration = duration
+    def __str__(self):
+        return f"{self.title} ({self.year}, directed by {self.director}, {self.genre}, {self.duration} mins)"
+    def __repr__(self):
+        return f"Movie(title='{self.title}', director='{self.director}', year={self.year}, genre='{self.genre}', duration={self.duration})"
 
 # Define the __str__ and __repr__ in the following format:
 # (1) __str__: Inception (2010), directed by Christopher Nolan, Sci-Fi, 148 mins
