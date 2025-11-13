@@ -10,7 +10,8 @@ class Book:
 
 newBook = Book("Harry potter","JK Rowling",1995)
 print(newBook)
-newBook.__repr__()
+representation = newBook.__repr__()
+print(representation)
 # Given a Book class with the __init__ method, define the following special methods:
 # (1) __str__ method - feel free to suggest a suitable string representation
 # (2) __repr__ method - what do you think should be the format?
